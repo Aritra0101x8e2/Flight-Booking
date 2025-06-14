@@ -165,13 +165,16 @@ const Header = () => {
               <SheetContent className="bg-white/95 dark:bg-slate-900/95 backdrop-blur-md">
                 <div className="flex flex-col space-y-4 mt-8">
                   <Link to="/" className="text-lg font-medium">Home</Link>
-                 <Link 
+                   <Link 
   to="https://fly-high-by-aritra.vercel.app/" 
-  className="text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-lg font-medium flex items-center space-x-2"
 >
- <Zap className="h-4 w-4" />
-                    <span>Deals</span>
+  <Plane className="h-4 w-4" />
+  <span>View Routes</span>
 </Link>
+
                   <Link to="/deals" className="text-lg font-medium flex items-center space-x-2">
                     <Zap className="h-4 w-4" />
                     <span>Deals</span>
